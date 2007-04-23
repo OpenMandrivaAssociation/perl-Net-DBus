@@ -1,7 +1,7 @@
 %define	module Net-DBus
 %define	name	perl-%{module}
-%define	version	0.33.3
-%define release	%mkrel 2
+%define	version	0.33.4
+%define release	%mkrel 1
 
 Name:		%{name}
 Version:	%{version}
@@ -11,8 +11,6 @@ License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
 Source:		http://www.cpan.org/modules/by-module/Net/%{module}-%{version}.tar.bz2
-# (fc) 0.33.3-2mdv don't use deprecated API
-Patch0:		perl-Net-DBus-0.33.3-deprecated.patch
 BuildRequires:	perl-devel
 BuildRequires:	libdbus-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}
@@ -30,7 +28,6 @@ Net::DBus::RemoteObject are of most relevance.
 
 %prep
 %setup -q -n %{module}-%{version}
-%patch0 -p1 -b .deprecated
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
