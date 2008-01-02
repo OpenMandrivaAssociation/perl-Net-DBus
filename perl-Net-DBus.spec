@@ -13,6 +13,7 @@ URL:		http://search.cpan.org/dist/%{module}
 Source:		http://www.cpan.org/modules/by-module/Net/%{module}-%{version}.tar.bz2
 BuildRequires:	perl-devel
 BuildRequires:	libdbus-devel
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Net::DBus provides a Perl API for the DBus message system. The DBus Perl
