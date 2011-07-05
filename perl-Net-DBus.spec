@@ -1,7 +1,7 @@
 %define	module Net-DBus
 %define	name	perl-%{module}
-%define	version	0.33.6
-%define release	%mkrel 8
+%define	version	1.0.0
+%define release	%mkrel 1
 
 Name:		%{name}
 Version:	%{version}
@@ -11,7 +11,6 @@ License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
 Source:		http://www.cpan.org/modules/by-module/Net/%{module}-%{version}.tar.bz2
-Patch0:		Net-DBus-0.33.6-dumper.patch
 BuildRequires:	perl-devel
 BuildRequires:	libdbus-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}
@@ -29,7 +28,6 @@ Net::DBus::RemoteObject are of most relevance.
 
 %prep
 %setup -q -n %{module}-%{version}
-%patch0 -p1 -b .dumper
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
