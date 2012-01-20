@@ -1,7 +1,7 @@
 %define	module Net-DBus
 %define	name	perl-%{module}
 %define	version	1.0.0
-%define release	%mkrel 1
+%define release	%mkrel 2
 
 Name:		%{name}
 Version:	%{version}
