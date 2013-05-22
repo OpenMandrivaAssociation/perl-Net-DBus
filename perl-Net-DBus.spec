@@ -1,11 +1,10 @@
 %define	module Net-DBus
 %define	name	perl-%{module}
 %define	version	1.0.0
-%define release	5
 
 Name:		%{name}
 Version:	%{version}
-Release:	%{release}
+Release:	6
 Summary:	Perl API to the DBus message system
 License:	GPL or Artistic
 Group:		Development/Perl
