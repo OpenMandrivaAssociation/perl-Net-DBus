@@ -4,7 +4,7 @@
 
 Name:		%{name}
 Version:	%{version}
-Release:	6
+Release:	7
 Summary:	Perl API to the DBus message system
 License:	GPL or Artistic
 Group:		Development/Perl
