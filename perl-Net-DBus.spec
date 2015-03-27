@@ -2,12 +2,12 @@
 
 Summary:	Perl API to the DBus message system
 Name:		perl-%{module}
-Version:	1.0.0
-Release:	15
+Version:	%perl_convert_version 1.1.0
+Release:	1
 License:	GPLv2 or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{module}
-Source0:	http://www.cpan.org/modules/by-module/Net/%{module}-%{version}.tar.bz2
+Source0:	http://www.cpan.org/modules/by-module/Net/Net-DBus-%{version}.tar.gz
 BuildRequires:	perl-devel
 BuildRequires:	dbus-devel
 
@@ -26,7 +26,7 @@ Net::DBus::RemoteObject are of most relevance.
 %setup -qn %{module}-%{version}
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make OPTIMIZE="%{optflags}"
 
 %check
@@ -40,4 +40,3 @@ Net::DBus::RemoteObject are of most relevance.
 %{perl_vendorarch}/Net
 %{perl_vendorarch}/auto/Net
 %{_mandir}/man3/*
-
