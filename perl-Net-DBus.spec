@@ -2,12 +2,12 @@
 
 Summary:	Perl API to the DBus message system
 Name:		perl-%{module}
-Version:	1.0.0
-Release:	16
+Version:	1.1.0
+Release:	1
 License:	GPLv2 or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{module}
-Source0:	http://www.cpan.org/modules/by-module/Net/%{module}-%{version}.tar.bz2
+Source0:	http://www.cpan.org/modules/by-module/Net/%{module}-%{version}.tar.gz
 BuildRequires:	perl-devel
 BuildRequires:	dbus-devel
 
