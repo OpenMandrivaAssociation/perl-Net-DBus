@@ -2,8 +2,8 @@
 
 Summary:	Perl API to the DBus message system
 Name:		perl-%{module}
-Version:	1.1.0
-Release:	7
+Version:	1.2.0
+Release:	1
 License:	GPLv2 or Artistic
 Group:		Development/Perl
 Url:		http://metacpan.org/pod/Net::DBus
@@ -23,17 +23,17 @@ client consumers, in which case Net::DBus::RemoteService and
 Net::DBus::RemoteObject are of most relevance.
 
 %prep
-%setup -qn %{module}-%{version}
+%autosetup -n %{module}-%{version} -p1
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
-%make OPTIMIZE="%{optflags}"
+%make_build OPTIMIZE="%{optflags}"
 
 %check
 #make test
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc README
