@@ -6,7 +6,7 @@ Version:	1.2.0
 Release:	5
 License:	GPLv2 or Artistic
 Group:		Development/Perl
-Url:		http://metacpan.org/pod/Net::DBus
+Url:		https://metacpan.org/pod/Net::DBus
 Source0:	http://www.cpan.org/modules/by-module/Net/%{module}-%{version}.tar.gz
 BuildRequires:	perl-devel
 BuildRequires:	dbus-devel
