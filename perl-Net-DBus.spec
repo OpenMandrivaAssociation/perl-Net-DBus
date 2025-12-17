@@ -3,7 +3,7 @@
 Summary:	Perl API to the DBus message system
 Name:		perl-%{module}
 Version:	1.2.0
-Release:	6
+Release:	7
 License:	GPLv2 or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/pod/Net::DBus
